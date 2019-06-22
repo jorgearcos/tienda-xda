@@ -3,17 +3,56 @@
 
     &__logo{
         position: absolute;
+        top: 9rem;
+        left: 2.5rem;
     }
 
     &__container{
+        min-height: 0;
+        padding: 0;
+        overflow: hidden;
 
     }
 
     &__list{
-
+        list-style: none;
     }
 
     &__item{
-        
+        a{
+            display: block;
+            text-align: left;
+            padding: .5em;
+            font-family: $raleway;
+            font-size:$small;
+            text-decoration: none;
+            color:red;
+        }
+
+        a:hover{
+            color: blue;   
+        }
+
     }
+}
+
+.collapsible{
+    text-align: right;
+
+    label{
+        display: inline-block;
+        padding: .5rem 1.5rem .5rem 0;
+       /*segun video padding-top: .5rem;
+        padding-bottom: .5rem;
+        padding-right: 1.5rem;*/
+        font-size: $small;
+    }
+}
+
+#menu{
+    display: none;
+}
+
+input:checked ~ .navegation__container{
+     max-height: 100%;
 }
