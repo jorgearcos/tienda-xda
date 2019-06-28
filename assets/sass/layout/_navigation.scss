@@ -3,7 +3,7 @@
 
     &__logo{
         position: absolute;
-        top: 9rem;
+        top: .9rem;
         left: 2.5rem;
     }
 
@@ -19,12 +19,13 @@
     }
 
     &__item{
+
         a{
             display: block;
             text-align: left;
             padding: .5em;
             font-family: $raleway;
-            font-size:$small;
+            font-size: 1.2rem;
             text-decoration: none;
             color:red;
         }
@@ -40,14 +41,15 @@
     text-align: right;
 
     label{
-        display: inline-block;
-        padding: .5rem 1.5rem .5rem 0;
-       /*segun video padding-top: .5rem;
+        display: block;
+       // segun yo padding: .5rem 1.5rem .5rem 0;
+       padding-top: .5rem;
         padding-bottom: .5rem;
-        padding-right: 1.5rem;*/
+        padding-right: 1.5rem;
         font-size: $small;
     }
 }
+
 
 #menu{
     display: none;
@@ -55,4 +57,52 @@
 
 input:checked ~ .navegation__container{
      max-height: 100%;
+}
+
+.tmn_logo img{
+    width: 30%;
+}
+
+@media only screen and (min-width:992px){
+
+    .navegation{
+        &__logo{
+            top: 1em;
+            left: 3em;
+        }
+    
+        &__container{
+            min-height: 100%;
+            padding: .5em 3em .5em 0;
+            overflow: visible;
+    
+        }
+    
+        &__list{
+            display: flex;
+            justify-content: flex-end;
+            padding: inherit;
+            margin: inherit;
+        }
+    
+        &__item{
+            a{
+                padding: .5em 1em;
+                font-family: $raleway;
+                font-size:$medium;
+                color: green;
+            }
+    
+            a:hover{
+                color:yellow;   
+            }
+    
+        }
+    }
+
+    .collapsible{
+        label{
+            display: none;
+        }
+    }
 }

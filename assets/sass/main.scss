@@ -1,11 +1,12 @@
 
 // Vendors bootstrap 4.3.1
-@import 'vendor/bootstrap_4.3.1/bootstrap';
+//@import 'vendor/bootstrap_4.3.1/bootstrap';
 
 //las demas parciales
 //abstracts
 @import 'abstracts/mixins';
 @import 'abstracts/variables';
+@import 'abstracts/funtions';
 
 //resets
 @import 'base/base';
@@ -16,8 +17,12 @@
 @import 'components/buttons';
 
 //layout
+@import 'layout/form';
+@import 'layout/subcribtion';
+@import 'layout/we-us';
+@import 'layout/main';
+@import 'layout/grid';
 @import 'layout/navigation';
-
 //pages - no hay
 
 //theme - no hay

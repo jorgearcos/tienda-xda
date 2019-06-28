@@ -25,3 +25,12 @@ $large: 1.125rem;
 $medium: 1rem;
 $small: 0.875rem;
 $x-small: 0.75rem;
+
+///variable para operar la funcion de llamado imagenes  Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;
+
+/* parar llamar a imagenes coloco el key = la funsion (el nombre);
+ejemplo background-image: img(casa. jpg)*/
