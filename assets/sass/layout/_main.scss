@@ -1,19 +1,29 @@
+
+@media only screen and (min-width: 768px){
+   
+    .main{
+        display:none;
+    }
+    .main--xs{
+        display:block;
+    }
+}
+
 .main{
-    display:none;
+    display: block;
+    height: auto;
     background-image: url('../img/hero.jpg'); 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     
-   /* figure{
-        margin-block-start: 0;
-        margin-block-end: 0;
-        margin-inline-start: 0;
-        margin-inline-end: 0;
-    }
+}
+.main--xs{
+    display: none;
+    height: 10rem;
+    background-image: url('../img/hero.jpg'); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
-    &--tmn img{
-        width: 100%;
-        height: auto;
-    }    */
 }

@@ -9,6 +9,10 @@ img {
   max-width: 100%;
 }
 
+h1 {
+  margin: 0;
+}
+
 .newsletter {
   background-color: #0c0910;
   color: #ffffff;
@@ -16,8 +20,12 @@ img {
 .newsletter label {
   display: block;
 }
+.newsletter input {
+  width: 90%;
+}
 
 .subcribtion {
+  text-align: center;
   background-color: red;
   writing-mode: vertical-lr;
   padding: 0.5rem;
@@ -27,18 +35,31 @@ img {
   background-color: aqua;
 }
 
-.main {
-  /*   height: 800px;
-     background-image: url('../img/hero.jpg'); 
-     background-position: center;
-     background-size: cover;
-     background-repeat: no-repeat;
-     display: block;
-     float: right;*/
+@media only screen and (min-width: 768px) {
+  .main {
+    display: none;
+  }
+
+  .main--xs {
+    display: block;
+  }
 }
-.main--tmn img {
-  width: 100%;
+.main {
+  display: block;
   height: auto;
+  background-image: url("../img/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main--xs {
+  display: none;
+  height: 10rem;
+  background-image: url("../img/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container_grid {
