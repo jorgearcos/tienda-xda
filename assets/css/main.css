@@ -35,17 +35,8 @@ h1 {
   background-color: aqua;
 }
 
-@media only screen and (min-width: 768px) {
-  .main {
-    display: none;
-  }
-
-  .main--xs {
-    display: block;
-  }
-}
 .main {
-  display: block;
+  display: none;
   height: auto;
   background-image: url("../img/hero.jpg");
   background-position: center;
@@ -54,7 +45,8 @@ h1 {
 }
 
 .main--xs {
-  display: none;
+  display: block;
+  background-color: blue;
   height: 10rem;
   background-image: url("../img/hero.jpg");
   background-position: center;
@@ -62,6 +54,36 @@ h1 {
   background-repeat: no-repeat;
 }
 
+@media only screen and (min-width: 992px) {
+  .main {
+    display: block;
+  }
+
+  .main--xs {
+    display: none;
+    background-color: blue;
+    height: 10rem;
+    background-image: url("../img/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main {
+    display: block;
+  }
+
+  .main--xs {
+    display: none;
+    background-color: blue;
+    height: 10rem;
+    background-image: url("../img/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 .container_grid {
   margin-left: auto;
   margin-right: auto;
