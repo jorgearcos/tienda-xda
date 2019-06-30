@@ -389,6 +389,35 @@ h3 {
     background-repeat: no-repeat;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .main {
+    display: none;
+    height: auto;
+    background-image: url("../img/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .main--xs {
+    display: block;
+    background-color: #ffffff;
+    height: 20rem;
+    background-image: url("../img/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .main--lg {
+    display: none;
+    height: auto;
+    background-image: url("../img/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 @media only screen and (min-width: 1200px) {
   .main {
     display: none;
@@ -635,16 +664,34 @@ h3 {
     grid-column: span 1;
   }
 }
+figure {
+  margin: 0;
+}
+
+.header {
+  display: inline-block;
+  width: 100%;
+}
+
 .navegation {
   position: relative;
+  margin: 0.5rem auto;
 }
 .navegation__logo {
   position: absolute;
-  top: 0.9rem;
   left: 2.5rem;
 }
+.navegation__logo-style {
+  width: 2rem;
+  height: 2rem;
+  background-color: #0c0910;
+  font-family: "Old Standard TT", serif;
+  color: #ffffff;
+  padding: 0.6rem;
+  margin: 0;
+}
 .navegation__container {
-  min-height: 0;
+  max-height: 0;
   padding: 0;
   overflow: hidden;
 }
@@ -656,12 +703,14 @@ h3 {
   text-align: left;
   padding: 0.5em;
   font-family: "Raleway", sans-serif;
-  font-size: 1.2rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #0c0910;
   text-decoration: none;
-  color: red;
 }
 .navegation__item a:hover {
-  color: blue;
+  color: #a6a5a8;
+  font-weight: 400;
 }
 
 .collapsible {
@@ -683,8 +732,8 @@ input:checked ~ .navegation__container {
   max-height: 100%;
 }
 
-.tmn_logo img {
-  width: 30%;
+.navegation__logo--tmn {
+  width: 20%;
 }
 
 @media only screen and (min-width: 992px) {
@@ -693,7 +742,7 @@ input:checked ~ .navegation__container {
     left: 3em;
   }
   .navegation__container {
-    min-height: 100%;
+    max-height: 100%;
     padding: 0.5em 3em 0.5em 0;
     overflow: visible;
   }
@@ -707,10 +756,12 @@ input:checked ~ .navegation__container {
     padding: 0.5em 1em;
     font-family: "Raleway", sans-serif;
     font-size: 1rem;
-    color: green;
+    font-weight: 700;
+    color: #0c0910;
   }
   .navegation__item a:hover {
-    color: yellow;
+    color: #a6a5a8;
+    font-weight: 400;
   }
 
   .collapsible label {
