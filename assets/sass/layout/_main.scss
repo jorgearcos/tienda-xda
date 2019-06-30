@@ -11,12 +11,56 @@
 
 .main--xs{
    display:block;
-   background-color: blue;
+   background-color: $white;
     height: 10rem;
     background-image: url('../img/hero.jpg'); 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+}
+
+.main--lg{
+    display:none;
+    height: auto;
+    background-image: url('../img/hero.jpg'); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+@media only screen and (min-width: 768px){
+    .main{
+        display:none;
+        height: auto;
+        background-image: url('../img/hero.jpg'); 
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    
+    .main--xs{
+       display:block;
+       background-color: $white;
+        height: 20rem;
+        background-image: url('../img/hero.jpg'); 
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+    }    
+
+    .main--lg{
+        display:none;
+        height: auto;
+        background-image: url('../img/hero.jpg'); 
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
 
 }
 
@@ -28,30 +72,48 @@
 
     .main--xs{
     display:none;
-    background-color: blue;
+    background-color:$white;;
     height: 10rem;
     background-image: url('../img/hero.jpg'); 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; 
 
+    }
+    .main--lg{
+        display:none;
+        height: auto;
+        background-image: url('../img/hero.jpg'); 
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
     }
 }
 
 @media only screen and (min-width: 1200px){
    
     .main{
-        display:block;
+        display:none;
     }
 
     .main--xs{
     display:none;
-    background-color: blue;
+    background-color:$white;;
     height: 10rem;
     background-image: url('../img/hero.jpg'); 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; 
 
+    }
+    .main--lg{
+        display:block;
+        height: auto;
+        background-image: url('../img/hero.jpg'); 
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
     }
 }
